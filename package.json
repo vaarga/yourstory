@@ -1,0 +1,55 @@
+{
+  "name": "yourstory",
+  "version": "1.0.0",
+  "description": "The yourstory.blog website",
+  "main": "index.js",
+  "scripts": {
+    "install-client-development": "npm run install-development --prefix client",
+    "install-client-production": "npm run install-production --prefix client",
+    "install-server-development": "npm run install-development --prefix server",
+    "install-server-production": "npm run install-production --prefix server",
+    "install-all-development": "npm install && npm run install-client-development && npm run install-server-development",
+    "install-all-production": "npm install --only=production && npm run install-client-production && npm run install-server-production",
+    "build-client-development": "npm run build-development --prefix client",
+    "build-client-production": "npm run build-production --prefix client",
+    "build-server": "npm run build --prefix server",
+    "build-all-development": "npm run build-client-development && npm run build-server",
+    "build-all-production": "npm run build-client-production && npm run build-server",
+    "start-development": "npm run start-development --prefix server",
+    "start-production": "npm run start-production --prefix server",
+    "watch-client": "npm run watch --prefix client & npm run start-development",
+    "watch-server": "npm run watch --prefix server",
+    "watch-all": "npm run watch --prefix client & npm run watch --prefix server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vargaeric/yourstory.git"
+  },
+  "keywords": [
+    "yourstory",
+    "story",
+    "blog"
+  ],
+  "author": "Varga Erik Zsolt",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/vargaeric/yourstory/issues"
+  },
+  "homepage": "https://github.com/vargaeric/yourstory#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "3.10.1",
+    "@typescript-eslint/parser": "3.10.1",
+    "eslint": "7.19.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-import-resolver-alias": "1.1.2",
+    "eslint-import-resolver-node": "0.3.4",
+    "eslint-import-resolver-typescript": "2.3.0",
+    "eslint-plugin-immutable-js": "0.0.2",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jest": "24.1.3",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-react": "7.22.0",
+    "eslint-plugin-react-hooks": "4.2.0"
+  }
+}

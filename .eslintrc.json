@@ -1,0 +1,107 @@
+{
+    "root": true,
+    "env": {
+        "es6": true,
+        "node": true,
+        "browser": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "extends": "airbnb",
+    "rules": {
+        "linebreak-style": 0,
+        "operator-linebreak": 0,
+        "comma-dangle": ["error", {
+            "arrays": "always-multiline",
+            "objects": "always-multiline",
+            "imports": "always-multiline",
+            "exports": "always-multiline",
+            "functions": "ignore"
+        }],
+        "jsx-a11y/label-has-associated-control": ["error", {
+            "required": {
+                "some": ["nesting", "id"]
+            }
+        }],
+        "jsx-a11y/label-has-for": ["error", {
+            "required": {
+                "some": ["nesting", "id"]
+            }
+        }],
+        "no-restricted-properties": [0],
+        "no-bitwise": [0],
+        "no-continue": [0],
+        "max-len": ["error", 120],
+        "indent": ["error", 4, {"SwitchCase": 1, "VariableDeclarator": 1, "outerIIFEBody": 1}],
+        "no-restricted-syntax": [2, "DebuggerStatement", "LabeledStatement", "WithStatement"],
+        "no-plusplus": [0],
+        "func-names": [0],
+        "no-duplicate-imports": [0],
+        "class-methods-use-this": "off",
+        "import/no-duplicates": 1,
+        "import/prefer-default-export": [0],
+        "no-console": 0,
+        "no-underscore-dangle": "error",
+        "no-unused-expressions": ["error", { "allowShortCircuit": true }],
+        "react/destructuring-assignment": ["off"],
+        "react/no-did-mount-set-state": 0,
+        "react/jsx-indent": [2, 4],
+        "react/jsx-filename-extension": [2, { "extensions": [".jsx", ".js", ".tsx"] }],
+        "react/jsx-one-expression-per-line": "off",
+        "react/jsx-indent-props": [2, 4],
+        "react/prefer-stateless-function": 0,
+        "react/jsx-no-bind": 1,
+        "react/jsx-props-no-spreading": 1,
+        "react/no-array-index-key": 1,
+        "jsx-a11y/click-events-have-key-events": 0,
+        "jsx-a11y/anchor-is-valid": ["error", {
+            "components": ["Link"],
+            "specialLink": ["to", "hrefLeft", "hrefRight"],
+            "aspects": ["noHref", "invalidHref", "preferButton"]
+        }],
+        "import/extensions": ["error", {
+            "js": "never",
+            "jsx": "never",
+            "ts": "never",
+            "tsx": "never"
+        }],
+        "padding-line-between-statements": ["error",
+            { "blankLine": "always", "prev": "directive", "next": "*" },
+            { "blankLine": "any",    "prev": "directive", "next": "directive" },
+            { "blankLine": "always", "prev": ["const", "let", "var"], "next": "*"},
+            { "blankLine": "any",    "prev": ["const", "let", "var"], "next": ["const", "let", "var"]},
+            { "blankLine": "always", "prev": "*", "next": "return" },
+            { "blankLine": "always", "prev": "*", "next": "block" },
+            { "blankLine": "always", "prev": "block", "next": "*" }
+        ],
+        "arrow-parens": [2, "as-needed", { "requireForBlockBody": true }],
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": ["error"],
+        "semi": "off",
+        "@typescript-eslint/semi": ["error"],
+        "@typescript-eslint/member-delimiter-style": ["error"],
+        "react-hooks/rules-of-hooks": "warn",
+        "react-hooks/exhaustive-deps": "warn",
+        "react/jsx-no-target-blank": [1, {
+            "allowReferrer": true
+        }],
+        "import/no-extraneous-dependencies": ["error", { "devDependencies": ["*/webpack.config.ts"] }]
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "react-hooks"
+    ],
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".ts", ".tsx"]
+            }
+        }
+    }
+}

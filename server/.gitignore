@@ -1,0 +1,9 @@
+# Dependencies
+node_modules
+
+# Distributable
+dist
+
+# Environment variables
+.env.development
+.env.production

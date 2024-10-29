@@ -1,0 +1,5 @@
+# Dependencies
+node_modules
+
+# IntelliJ’s project specific settings
+.idea

@@ -1,0 +1,8 @@
+# Dependencies
+node_modules
+
+# Distributable
+dist
+
+# Webpack config JS file
+webpack.config.js

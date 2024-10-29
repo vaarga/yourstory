@@ -1,0 +1,5 @@
+export enum MODAL_TYPE {
+    STORY_IMAGE,
+    STORY_DELETION,
+    USER_DELETION,
+}
