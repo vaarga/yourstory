@@ -1,6 +1,7 @@
 # yourstory
 
-> **Note**: This project was developed as a final project for my Bachelor's degree at the University of Oradea.
+> **Note**: This project was developed as the final project for my Bachelor's degree with a specialization in Computer 
+> Science at the University of Oradea.
 
 ## Description
 **yourstory** is a free blogging platform that allows users to:
