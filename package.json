@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vargaeric/yourstory.git"
+    "url": "git+https://github.com/vaarga/yourstory.git"
   },
   "keywords": [
     "yourstory",
@@ -33,9 +33,9 @@
   "author": "Varga Erik Zsolt",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/vargaeric/yourstory/issues"
+    "url": "https://github.com/vaarga/yourstory/issues"
   },
-  "homepage": "https://github.com/vargaeric/yourstory#readme",
+  "homepage": "https://github.com/vaarga/yourstory#readme",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "3.10.1",
     "@typescript-eslint/parser": "3.10.1",
