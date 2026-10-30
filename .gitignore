@@ -1,5 +1,3 @@
-# Dependencies
+.idea/
+.DS_Store
 node_modules
-
-# IntelliJ’s project specific settings
-.idea
